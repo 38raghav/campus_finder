@@ -1,12 +1,12 @@
-import { useState } from 'react'
-
+import {Header} from "./Component/Header"
+//import {Routes,Route} from 'react-router-dom';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Hello World</h1>
-      <button className='btn btn-success'>Click me!</button>
+    <Header></Header>
+    {/* <Routes>
+
+    </Routes> */}
     </>
   )
 }
