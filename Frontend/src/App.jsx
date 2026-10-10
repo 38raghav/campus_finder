@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <h1>Hello World</h1>
+      <button className='btn btn-success'>Click me!</button>
     </>
   )
 }
