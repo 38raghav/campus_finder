@@ -4,7 +4,7 @@ export const Data = [
     id: "1",
     label: "Full Name",
     type: "text",
-    name: "fname",
+    name: "name",
     placeholder: "Enter your full name",
     validation: {
       required: "Name is required",

@@ -1,5 +1,5 @@
 import { Data } from "./Data";
-import { Form } from "../Form/Form";
+import { Form } from "../../component/Form/Form";
 
 export const Login=()=>{
     return(
