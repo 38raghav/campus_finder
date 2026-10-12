@@ -1,12 +1,17 @@
-import { useState } from 'react'
+// import { Login } from './pages/LoginForm/Login'
+import { Signup } from './pages/SignupForm/Signup'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <h1>Hello World</h1>
+    
+
+      {/* <Login></Login> */}
+      <Signup></Signup>
     </>
   )
 }
