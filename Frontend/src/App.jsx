@@ -1,12 +1,19 @@
-import { useState } from 'react'
-
-
+import Home from "./Pages/Home"
+import Myposts from "./Pages/Myposts"
+import Upload_Item from "./Pages/Upload_Item"
+import { Routes, Route, Link } from 'react-router-dom'
+import Navbar from "./Component/Navbar"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello World</h1>
+       <Navbar/>
+       <Routes>
+              <Route path="/" element={<Home />} />
+              {/* <Route path="/Login" element={<Login />} /> */}
+              <Route path="/Myposts" element={<Myposts/>}/>
+              <Route path="/Upload_Item" element={<Upload_Item/>} />
+      </Routes>
     </>
   )
 }
