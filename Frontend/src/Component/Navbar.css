@@ -1,0 +1,49 @@
+.navbar-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.campus-navbar {
+  background-color: #163B70;
+  padding: 14px 0;
+}
+
+.campus-navbar .navbar-brand {
+  color: #FFFFFF;
+}
+
+.campus-navbar .nav-link {
+  color: #EFF6FF;
+  margin: 0 8px;
+}
+
+.campus-navbar .nav-link:hover,
+.campus-navbar .nav-link.active {
+  color: #FFFFFF;
+  border-radius: 6px;
+}
+
+.signup-btn {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border: 1px solid #3B82F6;
+}
+
+.signup-btn:hover {
+  background-color: #EFF6FF;
+  color: #163B70;
+}
