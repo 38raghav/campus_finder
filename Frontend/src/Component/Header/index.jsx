@@ -15,7 +15,7 @@ return(
         <Nav.Link as={NavLink} to="/posts" style={{color:"white",marginLeft:"10%"}}>MyPosts</Nav.Link>
         <Nav.Link as={NavLink} to="/login" style={{color:"white",marginLeft:"10%"}}>LogIn</Nav.Link>
         </Nav>
-        <Button>SignUp</Button>
+        <Button style={{width:"10%"}}>SignUp</Button>
  </Navbar>
 )
 }
