@@ -7,6 +7,7 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [conPassword, setconPassword] = useState("");
+
   const handler = (e) => {
     const { name, value } = e.target;
     console.log(name, value);
@@ -20,11 +21,20 @@ export default function SignUp() {
       setName(value);
     }
   };
+
+  function submitForm(){
+    alert(name + " "+ password+ " "+ email+" "+conPassword);
+    setName("");
+    setEmail("");
+    setPassword("");
+    setconPassword("");
+  }
+
   return (
     <>
       <div className="divOuter">
         <div className="logo">
-          <div className="style">
+          <div className="style mt-3 ">
             <img src="/formMap.png" className="image"></img>
             <div>
               <h4>Campus</h4>
@@ -82,15 +92,17 @@ export default function SignUp() {
             placeholder="Confirm your Password"
             className="inputdis"
           ></input>
-          <br></br>
+          <br></br><br></br>
 
-          <button className="btn btn-primary">SignUp</button>
+          <button className="btn btn-primary" onClick={submitForm}>SignUp</button>
+
           <div className="dis">
             <p>Already have an account?</p>
             <Link to="/login" className="btnSign">
               Login
             </Link>
           </div>
+
         </div>
       </div>
     </>

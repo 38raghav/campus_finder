@@ -1,19 +1,27 @@
 import { useState } from "react";
-//import { Button, Container } from "react-bootstrap";
 import "./login.css";
 import { Link } from "react-router-dom";
+
 export default function LogIn() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+
   const handler = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    
     if (name == "email") {
       setEmail(value);
     } else {
       setPassword(value);
     }
   };
+
+  function submitForm(){
+    alert(email+" "+password);
+    setPassword("");
+    setEmail("");
+  }
+
   return (
     <>
       <div className="outerDiv">
@@ -37,7 +45,9 @@ export default function LogIn() {
             placeholder="you@example.com"
             className="inputGroup"
           ></input>
+
           <br></br>
+
           <label>Password</label>
           <br></br>
           <input
@@ -50,20 +60,23 @@ export default function LogIn() {
           ></input>
           <br></br>
           <input type="checkbox" name="remember" value="rememberMe"></input>
+
           <label>Remember me</label>
           <button className="forgot">Forgot Password?</button>
           <br />
 
-          <button className="btn btn-primary">LogIn</button>
+          <button className="btn btn-primary" onClick={submitForm}>LogIn</button>
           <hr></hr>
 
           <button className="btn btn-light">Continue wih Google</button>
+
           <div className="account">
             <p>Don't have an account?</p>
             <Link to="/signup" className="btnSign">
               SignUp
             </Link>
           </div>
+
         </div>
       </div>
     </>
