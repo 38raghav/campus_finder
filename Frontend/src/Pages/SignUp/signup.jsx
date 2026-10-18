@@ -23,7 +23,7 @@ export default function SignUp() {
   return (
     <>
       <div className="divOuter">
-        <div className="logo">
+        <div className="logo mt-3" >
           <div className="style">
             <img src="/formMap.png" className="image"></img>
             <div>
@@ -84,7 +84,7 @@ export default function SignUp() {
           ></input>
           <br></br>
 
-          <button className="btn btn-primary">SignUp</button>
+          <button className="btn btn-primary mt-3">SignUp</button>
           <div className="dis">
             <p>Already have an account?</p>
             <Link to="/login" className="btnSign">

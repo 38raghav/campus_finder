@@ -7,13 +7,18 @@
     width:100%;
 }
 .inputdis{
-    width:100%;
+    
     margin-top: 5px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 5px;
     padding: 5px;
+    box-sizing: border-box;
 }
+
 .divInner{
-    margin-left: 0;
+     margin-left: 10%;
+     margin-right: 10%;
 }
 .divOuter{
     border-radius:10px;
@@ -24,8 +29,9 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-top:20px;
-    width:clamp(200px,4vm,400px);
-    max-width:400px;
+    width: clamp(350px, 90vw, 450px);
+    max-width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     /* align-items: center; */

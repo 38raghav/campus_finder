@@ -17,7 +17,7 @@ export default function LogIn() {
   return (
     <>
       <div className="outerDiv">
-        <div className="style">
+        <div className="style  mt-3">
           <img src="/formMap.png" className="image"></img>
           <div>
             <h4>Campus</h4>
