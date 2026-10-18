@@ -33,7 +33,7 @@ export default function SignUp() {
           </div>
 
           <h3>Create Your Account</h3>
-          <p>Join our campus community</p>
+          <p style={{textAlign:"center"}}>Join our campus community</p>
         </div>
 
         <div className="divInner">
