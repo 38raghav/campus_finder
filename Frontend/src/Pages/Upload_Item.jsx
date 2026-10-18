@@ -23,7 +23,7 @@ function Upload_Item() {
       <p className="content">Fill in the details below to help the owner find their item.</p>
       <form onSubmit={handleDetails}>
       <div style={{display:"flex"}}>
-        <div style={{width:"300px",height:"200px",backgroundColor:"powderblue",borderRadius:"5px",border:"2px dashed #163B70",alignItems:"center",justifyContent:"center",padding:"70px",marginRight:"80px"}}>
+        <div style={{width:"300px",height:"200px",backgroundColor:"powderblue",borderRadius:"5px",border:"2px dashed #163B70",alignItems:"center",justifyContent:"center",padding:"70px",marginRight:"80px",marginLeft:"20px"}}>
         <input type="file" name="uploaditem" accept="image/jpeg,image/png,image/jpg"  onChange={handler} required>
         </input>
       </div>
