@@ -1,9 +1,15 @@
+import { useState } from 'react';
 
+export default function Login() {
+  // 1. Name store karne ke liye state banayein
+  const [name, setName] = useState('');
 
-export default function Login(){
-    return (
-        <>
-        <h1>Login Form</h1>
-        </>
-    )
+  const handleSendDetails = () => {
+    console.log('Sending Data:', { name });
+  setName('');
+  };
+
+  return (
+    <></>
+  );
 }
