@@ -5,7 +5,10 @@
     justify-self:center;
     padding:5px;
     margin-top:20px;
-    width:30%;
+    width:clamp(200px,4vm,400px);
+    max-width: 400px;
+    
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +44,7 @@ p{
 .account{
     display:flex;
     margin-top: 10px;
+    justify-content:center;
 }
 .btnSign{
     background-color: white;
@@ -50,6 +54,7 @@ p{
 }
 .account .p{
     margin-top: 5px;
+    
 }
 .btn.btn-light{
     width: 100%;
